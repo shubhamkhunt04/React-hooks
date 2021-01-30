@@ -5,6 +5,7 @@ import UseState2 from "./Component/UseStateVersion/UseState2";
 import UseState3 from "./Component/UseStateVersion/UseState3";
 import CmpA from "./Component/UseContextHook/CmpA";
 import Main from "./Component/UseCallbackHook/Main";
+import UseMemoCmp from "./Component/UseMemoHook/UseMemoCmp";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
       <hr />
       <h1>Hello UseCallback Hook</h1>
       <Main />
+      <hr />
+      <h1>Hello UseMemo Hook</h1>
+      <UseMemoCmp />
     </div>
   );
 }
