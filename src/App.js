@@ -4,22 +4,26 @@ import UseState1 from "./Component/UseStateVersion/UseState1";
 import UseState2 from "./Component/UseStateVersion/UseState2";
 import UseState3 from "./Component/UseStateVersion/UseState3";
 import CmpA from "./Component/UseContextHook/CmpA";
+import Main from "./Component/UseCallbackHook/Main";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello UseState Hooks</h1>
+      <h1>Hello UseState Hook</h1>
       <UseState1></UseState1>
       <hr />
       <UseState2 />
       <hr />
       <UseState3 />
       <hr />
-      <h1>Hello UseEffect Hooks</h1>
+      <h1>Hello UseEffect Hook</h1>
       <UseEffect1 />
       <hr />
-      <h1>Hello UseContext Hooks</h1>
+      <h1>Hello UseContext Hook</h1>
       <CmpA />
+      <hr />
+      <h1>Hello UseCallback Hook</h1>
+      <Main />
     </div>
   );
 }

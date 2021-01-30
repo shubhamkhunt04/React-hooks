@@ -2,10 +2,15 @@ import React, { useState, useEffect } from "react";
 
 const UseEffect1 = () => {
   const [val, setVal] = useState([]);
-  useEffect(async () => {
+
+  const fetchdata = async () => {
     const data = await fetch("https://jsonplaceholder.typicode.com/users");
     // setVal(data[0].id);
     setVal(await data.json());
+  };
+
+  useEffect(() => {
+    fetchdata();
   }, []);
 
   return (
